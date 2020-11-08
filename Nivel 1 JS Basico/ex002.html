@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interação JavaScript</title>
+    <style>
+      input {
+        font-size: 12pt;
+        padding: 30px;
+      }
+      /* criei com input ao invés do button que é mais simples como no código do exercício */
+    </style>
+  </head>
+
+  <body>
+    <h1>Interagindo com um botão</h1>
+
+    <input type="button" value="Clique em mim" onclick="clicar()" />
+    <!-- criei com input ao invés do button que é mais simples como no código do exercício -->
+    <script>
+      function clicar() {
+        window.alert("Você clicou nesse botão!");
+      }
+    </script>
+  </body>
+</html>
