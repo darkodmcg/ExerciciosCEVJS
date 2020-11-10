@@ -18,18 +18,19 @@
     <h1>Média do aluno v1.0</h1>
     <button onclick="calcular()">Calcular média</button>
     <p><section id='res'>Aqui vai os resultados...</section></p>
-  </body>
-  <script>
+   <script>
       function calcular() {
-          let name = (window.prompt('Qual o nome do aluno?'))
-          let nota1 = Number(window.prompt('Qual a primeira nota?'))
-          let nota2 = Number(window.prompt('Qual a segunda nota?'))
+          let name = window.prompt('Qual o nome do aluno?')
+          let nota1 = Number(window.prompt(`Qual a primeira nota de ${name}?`))
+          let nota2 = Number(window.prompt(`Além de ${nota1}, qual foi a outra nota de ${name}?`))
           let res = window.document.getElementById('res')
           notaf = nota1 + nota2
+          // notaf = (nota1 + nota2)/2
           res.innerHTML = `<p>Calculando a média final de <mark>${name}</mark></br></p>
-          <p>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark></br></p>
+          <p>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark></br></p>          
         <p>A média final será <mark>${notaf / 2}</mark></p>`
-        
+        // res.innerHTML +=``
       }
   </script>
+  </body> 
 </html>
