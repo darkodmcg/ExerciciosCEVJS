@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números com JavaScript</title>
+    <style>
+      body {
+        font: 12pt Arial;
+      }
+      button {
+        font: 12pt Arial;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="res">
+      <p>Aqui vai o resultado...</p>
+    </section>
+    <script>
+      function calcular() {
+        let n = Number(window.prompt("Digite um número: "));
+
+        let res = document.getElementById('res')
+        res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong></p><hr>`;
+        res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(n)}</p>`
+        res.innerHTML += `<p>A sua parte inteira é ${Math.trunc(n)}</p>`
+        res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(n)}</p>`
+        res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(n)}</p>` 
+        res.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(n)}</p>` 
+        res.innerHTML += `<p>O valor de ${n}² é ${n**2}</p>` 
+        res.innerHTML += `<p>O valor de ${n}³ é ${n**3}</p>` 
+        // Os dois últimos fiz do meu jeito porque não sabia do "Math."
+        // res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
+        // res.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
+      }
+    </script>
+  </body>
+</html>
