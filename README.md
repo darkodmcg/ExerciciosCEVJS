@@ -1,2 +1,2 @@
 # ExerciciosCEVJS
- Minhas resposta dos exercícios de javascript do Curso Em Vídeo!
+ Minhas respostas dos exercícios de javascript do Curso Em Vídeo!
